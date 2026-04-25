@@ -1,13 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.myshop.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>MyShopApp</name>
-    <description>
-        A sample Apache Cordova application that responds to the deviceready event.
-    </description>
-    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
-        Apache Cordova Team
-    </author>
-    <content src="index.html" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
+<widget id="com.myshop.app"
+version="1.0.0"
+xmlns="http://www.w3.org/ns/widgets"
+xmlns:cdv="http://cordova.apache.org/ns/1.0">
+
+<name>MyShopApp</name>
+
+<description>
+Premium Shopping App
+</description>
+
+<author email="support@myshopapp.com">
+Achilles Tendon
+</author>
+
+<content src="index.html" />
+
+<preference name="Orientation" value="portrait" />
+<preference name="Fullscreen" value="true" />
+<preference name="SplashScreenDelay" value="3000" />
+<preference name="FadeSplashScreenDuration" value="1000" />
+
+<platform name="android">
+<icon src="res/icon.png" />
+<splash src="res/splash.png" />
+</platform>
+
+<allow-navigation href="*" />
+<allow-intent href="http://*/*" />
+<allow-intent href="https://*/*" />
+
 </widget>
